@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  UDP_Communication_Framework.cpp
+C:\Users\Lukas\OneDrive - České vysoké učení technické v Praze\Zaloha\Lukas\ČVUT\7.semestr\KDS\Semestralka\UDP_Communication_Framework\UDP_Communication_Framework\UDP_Communication_Framework.cpp(69,89): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Lukas\OneDrive - České vysoké učení technické v Praze\Zaloha\Lukas\ČVUT\7.semestr\KDS\Semestralka\UDP_Communication_Framework\UDP_Communication_Framework\UDP_Communication_Framework.cpp(56,7): warning C4101: 'buffer_rx': unreferenced local variable
+  UDP_Communication_Framework.vcxproj -> C:\Users\Lukas\OneDrive - České vysoké učení technické v Praze\Zaloha\Lukas\ČVUT\7.semestr\KDS\Semestralka\UDP_Communication_Framework\x64\Debug\UDP_Communication_Framework.exe
