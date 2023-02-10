@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetDerper.CLI</name>
+    </assembly>
+    <members>
+        <member name="T:NetDerper.CLI.Config">
+            <summary>
+              The struct representing configuration of NetDerper CLI application.
+            </summary>
+        </member>
+        <member name="T:NetDerper.CLI.Config.Processing">
+            <summary>
+              The struct representing stream processing configuration.
+            </summary>
+        </member>
+        <member name="T:NetDerper.CLI.Config.Processing.SendDelay">
+            <summary>
+              The struct representing sending delay configuration.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.SendDelay.Mean">
+            <summary>
+              The delay mean value in milliseconds.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.SendDelay.StdDev">
+            <summary>
+              The delay standard deviation value in milliseconds.
+            </summary>
+        </member>
+        <member name="T:NetDerper.CLI.Config.Processing.DataManipulation">
+            <summary>
+              The struct representing data manipulation configuration.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.DataManipulation.DropRate">
+            <summary>
+              The datagram drop rate.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.DataManipulation.ErrorRate">
+            <summary>
+              The datagram error rate.
+            </summary>
+        </member>
+        <member name="T:NetDerper.CLI.Config.Processing.StreamConnection">
+            <summary>
+              The struct representing stream connection configuration.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.StreamConnection.SourcePort">
+            <summary>
+              The source port.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.StreamConnection.TargetPort">
+            <summary>
+              The target port.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.StreamConnection.TargetHostName">
+            <summary>
+              The target host name.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.Connection">
+            <summary>
+              The stream connection configuration.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.Manipulation">
+            <summary>
+              The data manipulation configuration.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Processing.Delay">
+            <summary>
+              The sending delay configuration.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Data">
+            <summary>
+              The data stream processing configuration.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Config.Acknowledgement">
+            <summary>
+              The acknowledgement stream processing configuration.
+            </summary>
+        </member>
+        <member name="M:NetDerper.CLI.Config.LoadAsync(System.String)">
+            <summary>
+              Loads configuration asynchronously form a file.
+            </summary>
+            <param name="filePath">The configuration file path.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The drop rate or error rate value is invalid.</exception>
+            <returns>
+              Returns instance of <see cref="T:System.Threading.Tasks.Task" /> representing asynchronous configuration loading operation.
+            </returns>
+        </member>
+        <member name="T:NetDerper.CLI.Program">
+            <summary>
+              Static class representing Program of the Core application.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Program.DataProcessor">
+            <summary>
+              The data stream processor.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Program.AckProcessor">
+            <summary>
+              The acknowledgement stream processor.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Program.TaskCompletionSource">
+            <summary>
+              The task completion source.
+            </summary>
+        </member>
+        <member name="F:NetDerper.CLI.Program.DefaultConfigFilePath">
+            <summary>
+              Default configuration file path.
+            </summary>
+        </member>
+        <member name="M:NetDerper.CLI.Program.Main(System.String)">
+            <summary>
+              Tool for error injection into UDP packets and communication.
+            </summary>
+            <param name="config">The configuration file</param>
+            <returns>
+              Returns instance of <see cref="T:System.Threading.Tasks.Task" /> representing asynchronous Main function.
+            </returns>
+        </member>
+        <member name="M:NetDerper.CLI.Program.LoadConfigAsync(System.String)">
+            <summary>
+              Loads the configuration asynchronously.
+            </summary>
+            <param name="filePath">The configuration file path.</param>
+            <returns>
+              Returns instance of <see cref="T:System.Threading.Tasks.Task" /> representing asynchronous configuration loading operation.
+            </returns>
+        </member>
+        <member name="M:NetDerper.CLI.Program.StreamProcessor_ProcessingError(NetDerper.Core.StreamProcessor,System.Exception)">
+            <summary>
+              Handles the processing error event of stream processor.
+            </summary>
+            <param name="streamProcessor">The stream processor.</param>
+            <param name="e">The exception.</param>
+        </member>
+    </members>
+</doc>
